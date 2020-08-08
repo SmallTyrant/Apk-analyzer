@@ -1,0 +1,21 @@
+adb push frida-server /data/local/tmp
+프리다 서버를 원하는 에뮬 폴더에 넣어준다
+
+chmod 777 frida-server
+루트 권한을 준다
+
+./frida-sever & 
+&이 붙으면 백그라운드 백그라운드를 실행해준다
+
+frida-ps -U
+-U를 이용하여 백그라운드까지 실행된것을 확인 -> 프리다 서버가 실행되는것을 볼 수 있음
+
+frida -U 127.0.0.1:62001 -p 4671
+에뮬 -p는 (패키지 pid)
+
+python fridump3.py -u -s com.bugapc.dkuangadc
+프리덤프 만약에 device 에러가 뜨면 79번째줄 usb_device(1) 1넣어주기
+-s 패키지이름
+
+AstroGrep 툴로 덤프 디렉터리 지정 후 검색할 문자열 입력하여 찾기
+윈도우용 grep
