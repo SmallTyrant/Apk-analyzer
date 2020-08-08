@@ -1,0 +1,16 @@
+java -jar apktool d "a.apk"
+java -jar apktool_2.3.4 d "a.apk"
+
+
+그 후 \smali\com\avas\fat
+
+delete -> open
+
+그 후 다시 앱 재빌드 -
+
+java -jar apktool b "폴더"
+
+> dist 폴더에 apk가 생성됨
+
+
+그다음 사인작업으로
