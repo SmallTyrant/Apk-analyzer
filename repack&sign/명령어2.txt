@@ -1,0 +1,3 @@
+java -jar signapk.jar testkey.x509.pem testkey.pk8 [서명할 APK 이름] [서명 후의 APK 명]
+
+java -jar signapk.jar testkey.x509.pem testkey.pk8 악성앱.apk repack.apk

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="create" value="1" />
+    <boolean name="lock" value="false" />
+    <string name="last_addr">ws://171.244.33.229:28855</string>
+</map>
